@@ -13,7 +13,7 @@ class DateableTest < ActiveSupport::TestCase
       should "have a nil date, date_string, and date_specificity" do
         @instance.date.should be_nil
         @instance.date_string.should be_nil
-        @instance.date_specificty.should be_nil
+        @instance.date_specificity.should be_nil
       end
     end
   
