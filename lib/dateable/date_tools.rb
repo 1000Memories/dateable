@@ -2,7 +2,6 @@ require 'chronic'
 
 module Dateable
   module DateTools
-
     DateSpecificityLevel = {
       "day"           => 1,
       "month"         => 2,
@@ -73,7 +72,7 @@ module Dateable
     end
 
     def self.specificity_string(date_specificity_int)
-      DateSpecificityLevel.index(date_specificity_int)
+      DateSpecificityLevel.key(date_specificity_int)
     end
 
     def self.specificity_int(date_specificity_string)

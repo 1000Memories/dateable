@@ -23,5 +23,10 @@ module Dateable
 
       [date, specificity]
     end
+
+    define_method "#{name}_specificity_string" do
+      specificity_int = self.send "#{name}_specificity"
+      specificity_int ? DateTools.specificity_string(specificity_int) : nil
+    end
   end
 end

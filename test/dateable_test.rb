@@ -37,12 +37,23 @@ class DateableTest < ActiveSupport::TestCase
     context "with a string-ey date string" do
       setup do
         @date_string = 'May 18th, 1985'
-        @instance.date = @date_string
+        @instance.date_string = @date_string
         @instance.save
       end
 
       should "have a date that matches the string" do
-        @instance.date.should == Date.parse(@date_string)
+        @instance.date.to_date.should == Date.parse(@date_string)
+      end
+    end
+
+    context "with a decade of specificity" do
+      setup do
+        @instance.date_string = "1990s"
+        @instance.save
+      end
+
+      should "have a specificity_string of 'decade'" do
+        @instance.date_specificity_string.should == 'decade'
       end
     end
   end
