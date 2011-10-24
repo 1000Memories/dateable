@@ -1,0 +1,13 @@
+# Logfile created on 2011-10-24 13:23:08 -0700 by logger.rb/31641
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "date_string" varchar(255), "date_specificity" integer) 
