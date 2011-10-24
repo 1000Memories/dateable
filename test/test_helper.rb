@@ -47,4 +47,3 @@ def rebuild_class
   end
   Dummy.reset_column_information
 end
-
