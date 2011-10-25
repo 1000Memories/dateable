@@ -30,6 +30,9 @@ def rebuild_model
     table.datetime :date
     table.string   :date_string
     table.integer  :date_specificity
+    table.datetime :another_date
+    table.string   :another_date_string
+    table.integer  :another_date_specificity
   end
   rebuild_class
 end
@@ -44,6 +47,7 @@ def rebuild_class
   Dummy.class_eval do
     extend Dateable
     has_dateable_field :date
+    has_dateable_field :another_date
   end
   Dummy.reset_column_information
 end

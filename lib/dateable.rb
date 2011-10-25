@@ -5,9 +5,9 @@ module Dateable
   # makes setters on #{name}_string
   # set #{name} and #{name}_specificity
   def has_dateable_field(name)
-    before_save :set_date_attribs, if: "#{name}_string_changed?".to_sym
+    before_save "set_#{name}_attribs".to_sym, if: "#{name}_string_changed?".to_sym
 
-    define_method :set_date_attribs do
+    define_method "set_#{name}_attribs".to_sym do
       date_string = self.send("#{name}_string")
       
       if date_string.blank?
