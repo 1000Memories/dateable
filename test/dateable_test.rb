@@ -1,7 +1,5 @@
 require 'test_helper'
 
-
-
 class DateableTest < ActiveSupport::TestCase
   context "an instance of a Model with a dateable field" do
     setup do
@@ -54,6 +52,22 @@ class DateableTest < ActiveSupport::TestCase
 
       should "have a specificity_string of 'decade'" do
         @instance.date_specificity_string.should == 'decade'
+      end
+    end
+
+    context "with an explicitly set date" do
+      setup do 
+        @date = Time.new 1985, 5, 18
+        @instance.date = @date
+        @instance.save
+      end
+
+      should "have a specificity_string of 'day'" do
+        @instance.date_specificity_string.should == 'day'
+      end
+
+      should "have a date_string equivalent to the date" do
+        @instance.date_string.should == @date.strftime("%B %-d, %Y")
       end
     end
   end
